@@ -7,8 +7,17 @@
 
     <script>
         
+        
         function hello() {
-            document.querySelector('h1').innerHTML = ("I'm JavaScript")
+
+            const heading = document.querySelector('h1');
+
+            if (heading.innerHTML === ("Hello, User!")) {
+                heading.innerHTML = ("I'm JavaScript");
+            } else {
+                heading.innerHTML = ('Hello, Idiot . . .');
+            }
+
         }
 
     </script>
